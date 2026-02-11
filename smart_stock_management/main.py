@@ -223,6 +223,10 @@ def list_products_sorted(manager: StoreManager) -> None:
     else:
         print("Invalid choice.")
         return
+    
+    if not products:
+        print("\nNo Products Available.")
+        return
 
     print("\n--- Sorted Products ---")
     for product in products:
